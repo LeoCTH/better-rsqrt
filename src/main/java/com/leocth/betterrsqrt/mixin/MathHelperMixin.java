@@ -9,13 +9,15 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 public class MathHelperMixin {
     @ModifyConstant(
         method = "fastInverseSqrt(F)F",
-        constant = @Constant(intValue = 0x5f3759df)
+        constant = @Constant(intValue = 0x5f3759df),
+        require = 0
     )
     private static int modifyRsqrt32Constant(int original) { return 0x5f375a86; }
 
     @ModifyConstant(
         method = "fastInverseSqrt(D)D",
-        constant = @Constant(longValue = 0x5fe6eb50c7b537aaL)
+        constant = @Constant(longValue = 0x5fe6eb50c7b537aaL),
+        require = 0
     )
     private static long modifyRsqrt64Constant(long original) { return 0x5fe6eb50c7b537a9L; }
 }
