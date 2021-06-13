@@ -12,6 +12,7 @@
       }
     }
   ],
+  "icon": "assets/betterrsqrt/icon.png",
   "contact": {
     "sources": "https://github.com/LeoCTH/better-rsqrt"
   },
