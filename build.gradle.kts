@@ -37,7 +37,7 @@ tasks {
         options.encoding = "UTF-8"
 
         // Minecraft 1.17 (21w19a) upwards uses Java 16.
-        options.release.set(16)
+        options.release.set(8)
     }
 
     //compileKotlin.kotlinOptions.jvmTarget = "16"
