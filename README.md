@@ -2,6 +2,8 @@
 **N.B.:** The accuracy benefits of this is negligible at best, so don't expect anything big to happen. This is created
 purely because I want to, and I can. 
 
+*Tested to work every version since 1.14 (v1.0.1)*
+
 Replaces the constant Minecraft uses in their [fast reciprocal square root](https://en.wikipedia.org/wiki/Fast_inverse_square_root)
 (also known as `InvSqrt` or `rsqrt`) functions, to yield better accuracy:
 
