@@ -1,12 +1,11 @@
 pluginManagement {
     repositories {
         mavenCentral()
-        maven(
-            //name = "Fabric",
-            url = "https://maven.fabricmc.net/"
-        )
+        maven("https://maven.fabricmc.net/") {
+            name = "Fabric"
+        }
         gradlePluginPortal()
     }
 }
 
-rootProject.name = "mod-template"
+rootProject.name = "better-rsqrt"
